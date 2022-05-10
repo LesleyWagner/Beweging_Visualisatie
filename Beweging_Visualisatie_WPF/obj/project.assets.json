@@ -1,0 +1,170 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0-windows7.0": {
+      "HelixToolkit/2.20.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.1/HelixToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/HelixToolkit.dll": {}
+        }
+      },
+      "HelixToolkit.Wpf/2.20.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/HelixToolkit.Wpf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/HelixToolkit.Wpf.dll": {}
+        }
+      },
+      "Formula1/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Formula1.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Formula1.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "HelixToolkit/2.20.2": {
+      "sha512": "KQlQp7R1ozWqK3l4jvJ/zMTjD82P3EWaXGO+46HmU4DLAoFohaRrEx6SLcblautsdxhZcrvwOU91estZAhnY9g==",
+      "type": "package",
+      "path": "helixtoolkit/2.20.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "AUTHORS",
+        "CONTRIBUTORS",
+        "LICENSE",
+        "README.md",
+        "helixtoolkit.2.20.2.nupkg.sha512",
+        "helixtoolkit.nuspec",
+        "helixtoolkit.png",
+        "lib/netstandard1.1/HelixToolkit.dll",
+        "lib/netstandard1.1/HelixToolkit.xml"
+      ]
+    },
+    "HelixToolkit.Wpf/2.20.2": {
+      "sha512": "aO/bnFV+tPb1FRiQCs2VY4hVxUvfN7y7XWtv/o+EB/XI8zq7xLnB7Q1txfjHPMuPOV8w0BrCgLef1k/YPihdTQ==",
+      "type": "package",
+      "path": "helixtoolkit.wpf/2.20.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "AUTHORS",
+        "CONTRIBUTORS",
+        "LICENSE",
+        "README.md",
+        "helixtoolkit.png",
+        "helixtoolkit.wpf.2.20.2.nupkg.sha512",
+        "helixtoolkit.wpf.nuspec",
+        "lib/net45/HelixToolkit.Wpf.XML",
+        "lib/net45/HelixToolkit.Wpf.dll"
+      ]
+    },
+    "Formula1/1.0.0": {
+      "type": "project",
+      "path": "../../../../../../source/repos/WindowsFormsAppWPF/WpfControlLibrary3/Formula1.csproj",
+      "msbuildProject": "../../../../../../source/repos/WindowsFormsAppWPF/WpfControlLibrary3/Formula1.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0-windows7.0": [
+      "Formula1 >= 1.0.0",
+      "HelixToolkit >= 2.20.2",
+      "HelixToolkit.Wpf >= 2.20.2"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\lesle\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\lesle\\OneDrive - Office 365 Fontys\\Software Design\\SD22\\Beweging_Visualisatie\\Beweging_Visualisatie\\Beweging_Visualisatie_WPF\\Beweging_Visualisatie_WPF.csproj",
+      "projectName": "Beweging_Visualisatie_WPF",
+      "projectPath": "C:\\Users\\lesle\\OneDrive - Office 365 Fontys\\Software Design\\SD22\\Beweging_Visualisatie\\Beweging_Visualisatie\\Beweging_Visualisatie_WPF\\Beweging_Visualisatie_WPF.csproj",
+      "packagesPath": "C:\\Users\\lesle\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\lesle\\OneDrive - Office 365 Fontys\\Software Design\\SD22\\Beweging_Visualisatie\\Beweging_Visualisatie\\Beweging_Visualisatie_WPF\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\lesle\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0-windows7.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0-windows7.0": {
+          "targetAlias": "net5.0-windows",
+          "projectReferences": {
+            "C:\\Users\\lesle\\source\\repos\\WindowsFormsAppWPF\\WpfControlLibrary3\\Formula1.csproj": {
+              "projectPath": "C:\\Users\\lesle\\source\\repos\\WindowsFormsAppWPF\\WpfControlLibrary3\\Formula1.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0-windows7.0": {
+        "targetAlias": "net5.0-windows",
+        "dependencies": {
+          "HelixToolkit": {
+            "target": "Package",
+            "version": "[2.20.2, )"
+          },
+          "HelixToolkit.Wpf": {
+            "target": "Package",
+            "version": "[2.20.2, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WPF": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'HelixToolkit.Wpf 2.20.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "HelixToolkit.Wpf",
+      "targetGraphs": [
+        "net5.0-windows7.0"
+      ]
+    }
+  ]
+}

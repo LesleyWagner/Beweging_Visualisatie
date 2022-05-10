@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Beweging_Visualisatie", "Beweging_Visualisatie\Beweging_Visualisatie.vcxproj", "{C5F80730-F44F-4478-BDAE-6634EFC2CA88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Beweging_Visualisatie_WF", "..\..\..\..\..\source\repos\WindowsFormsAppWPF\WindowsFormsApp1\Beweging_Visualisatie_WF.csproj", "{08A951F8-822A-49C5-AE1A-306BED3DF531}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Formula1", "..\..\..\..\..\source\repos\WindowsFormsAppWPF\WpfControlLibrary3\Formula1.csproj", "{DA071FF9-2054-4DAB-8C0A-BE7F1F7CABDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Beweging_Visualisatie_WPF", "Beweging_Visualisatie_WPF\Beweging_Visualisatie_WPF.csproj", "{4C53C9FE-03D7-449D-9E6E-59FCDEE46425}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C5F80730-F44F-4478-BDAE-6634EFC2CA88}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{C5F80730-F44F-4478-BDAE-6634EFC2CA88}.Debug|x86.ActiveCfg = Debug|Win32
+		{C5F80730-F44F-4478-BDAE-6634EFC2CA88}.Debug|x86.Build.0 = Debug|Win32
+		{C5F80730-F44F-4478-BDAE-6634EFC2CA88}.Release|Any CPU.ActiveCfg = Release|Win32
+		{C5F80730-F44F-4478-BDAE-6634EFC2CA88}.Release|x86.ActiveCfg = Release|Win32
+		{C5F80730-F44F-4478-BDAE-6634EFC2CA88}.Release|x86.Build.0 = Release|Win32
+		{08A951F8-822A-49C5-AE1A-306BED3DF531}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08A951F8-822A-49C5-AE1A-306BED3DF531}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08A951F8-822A-49C5-AE1A-306BED3DF531}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{08A951F8-822A-49C5-AE1A-306BED3DF531}.Debug|x86.Build.0 = Debug|Any CPU
+		{08A951F8-822A-49C5-AE1A-306BED3DF531}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08A951F8-822A-49C5-AE1A-306BED3DF531}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08A951F8-822A-49C5-AE1A-306BED3DF531}.Release|x86.ActiveCfg = Release|Any CPU
+		{08A951F8-822A-49C5-AE1A-306BED3DF531}.Release|x86.Build.0 = Release|Any CPU
+		{DA071FF9-2054-4DAB-8C0A-BE7F1F7CABDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA071FF9-2054-4DAB-8C0A-BE7F1F7CABDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA071FF9-2054-4DAB-8C0A-BE7F1F7CABDB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DA071FF9-2054-4DAB-8C0A-BE7F1F7CABDB}.Debug|x86.Build.0 = Debug|Any CPU
+		{DA071FF9-2054-4DAB-8C0A-BE7F1F7CABDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA071FF9-2054-4DAB-8C0A-BE7F1F7CABDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA071FF9-2054-4DAB-8C0A-BE7F1F7CABDB}.Release|x86.ActiveCfg = Release|Any CPU
+		{DA071FF9-2054-4DAB-8C0A-BE7F1F7CABDB}.Release|x86.Build.0 = Release|Any CPU
+		{4C53C9FE-03D7-449D-9E6E-59FCDEE46425}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C53C9FE-03D7-449D-9E6E-59FCDEE46425}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C53C9FE-03D7-449D-9E6E-59FCDEE46425}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4C53C9FE-03D7-449D-9E6E-59FCDEE46425}.Debug|x86.Build.0 = Debug|Any CPU
+		{4C53C9FE-03D7-449D-9E6E-59FCDEE46425}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C53C9FE-03D7-449D-9E6E-59FCDEE46425}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C53C9FE-03D7-449D-9E6E-59FCDEE46425}.Release|x86.ActiveCfg = Release|Any CPU
+		{4C53C9FE-03D7-449D-9E6E-59FCDEE46425}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FBBE9FF5-9C9B-40B5-A49F-4AC9E80EE70E}
+	EndGlobalSection
+EndGlobal
