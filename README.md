@@ -111,50 +111,33 @@ De setup functie die het volgende:
 
 De WifiModule class maakt communicatie via Wifi met de ESP8266 mogelijk door gebruik te maken van de UDP class uit de ESP8266WiFi library. Het bevat de volgende funties:
 
--
-### _WiFiModule(IPAddress&amp; local\_IP, IPAddress&amp; gateway, IPAddress&amp; subnet, String&amp; hostname)__:_ De constructor configureert de ESP8266 als Wi-Fi access point.
--
-### _bool listen()__:_ Start het Wi-Fi access point en luistert naar inkomende verbindingen. Geeft &#39;true&#39; als er een verbinding is gemaakt. Anders blijft de functie altijd doorgaan.
--
-### _void begin(int udpPort)__:_ Start UDP communicatie op poort &#39;udpPort&#39;.
--
-### _void close()__:_ Verbreekt de UDP communicatie.
--
-### _bool send(Components&amp; orientation, Components&amp; position)__:_ Verzendt sensor data via UDP communicatie naar de client. Geeft &#39;true&#39; als het bericht succesvol is verstuurd, anders &#39;false&#39;.
--
-### _bool send(Components\* orientation, Components\* position, int num\_samples)__:_ Verzendt &#39;num\_samples&#39; aantal samples van de sensor data via UDP communicatie naar de client. &#39;orientation&#39; en &#39;position&#39; zijn arrays van lengte &#39;num\_samples&#39;. Geeft &#39;true&#39; als het bericht succesvol is verstuurd, anders &#39;false&#39;.
--
-### _bool receive():_ Ontvangt bericht van de client via UDP communicatie. Dit bericht wordt gelezen zodat het duidelijk is dat de client de data goed ontvangt. Geeft &#39;true&#39; als het bericht succesvol is ontvangen, anders &#39;false&#39;.
+- _WiFiModule(IPAddress&amp; local\_IP, IPAddress&amp; gateway, IPAddress&amp; subnet, String&amp; hostname)__:_ De constructor configureert de ESP8266 als Wi-Fi access point.
+- _bool listen()__:_ Start het Wi-Fi access point en luistert naar inkomende verbindingen. Geeft &#39;true&#39; als er een verbinding is gemaakt. Anders blijft de functie altijd doorgaan.
+- _void begin(int udpPort)__:_ Start UDP communicatie op poort &#39;udpPort&#39;.
+- _void close()__:_ Verbreekt de UDP communicatie.
+- _bool send(Components&amp; orientation, Components&amp; position)__:_ Verzendt sensor data via UDP communicatie naar de client. Geeft &#39;true&#39; als het bericht succesvol is verstuurd, anders &#39;false&#39;.
+- _bool send(Components\* orientation, Components\* position, int num\_samples)__:_ Verzendt &#39;num\_samples&#39; aantal samples van de sensor data via UDP communicatie naar de client. &#39;orientation&#39; en &#39;position&#39; zijn arrays van lengte &#39;num\_samples&#39;. Geeft &#39;true&#39; als het bericht succesvol is verstuurd, anders &#39;false&#39;.
+- _bool receive():_ Ontvangt bericht van de client via UDP communicatie. Dit bericht wordt gelezen zodat het duidelijk is dat de client de data goed ontvangt. Geeft &#39;true&#39; als het bericht succesvol is ontvangen, anders &#39;false&#39;.
 
 ### MotionSensor
 
 De MotionSensor class representeert de MPU9250 bewegingssensor. Het is een extensie van de MPU9250 class uit een externe library. Het bevat functies die de data verkrijgt en filters die de data vervormt. Sommige van de gebruikte functies komen uit de MPU9250 class; deze worden hier niet benoemd. De MPU9250 class bevat bijvoorbeeld functies voor kalibarie.
 
--
-### _void updateData()__:_ Leest nieuwe data van de sensor als het beschikbaar is.
--
-### _Components getAcc()__:_ geeft geschaalde acceleratie samples met bias weggehaald.
--
-### _Components getVel()__:_ geeft geschaalde hoeksnelheid samples met bias weggehaald.
--
-### _Components getAcc()__:_ geeft geschaalde magnetische kracht samples met bias weggehaald.
--
-### _Components accLPF(Components&amp; currentAcc, Components&amp; prevAccLP)__:_ filtert ruis uit de acceleratie data, laagdoorlaatfilter.
--
-### _Components velLPF(Components&amp; currentVel, Components&amp; prevVelLP)__:_ filtert ruis uit de hoeksnelheid data, laagdoorlaatfilter.
--
-### _Components magLPF(Components&amp; currentMag, Components&amp; prevMagLP)__:_ filtert ruis uit de magnetische kracht data, laagdoorlaatfilter.
--
-### _Components accHPF(std::list\&lt;Components\&gt;&amp; accs)__:_ high pass filter voor acceleratie data.
+- _void updateData()__:_ Leest nieuwe data van de sensor als het beschikbaar is.
+- _Components getAcc()__:_ geeft geschaalde acceleratie samples met bias weggehaald.
+- _Components getVel()__:_ geeft geschaalde hoeksnelheid samples met bias weggehaald.
+- _Components getAcc()__:_ geeft geschaalde magnetische kracht samples met bias weggehaald.
+- _Components accLPF(Components&amp; currentAcc, Components&amp; prevAccLP)__:_ filtert ruis uit de acceleratie data, laagdoorlaatfilter.
+- _Components velLPF(Components&amp; currentVel, Components&amp; prevVelLP)__:_ filtert ruis uit de hoeksnelheid data, laagdoorlaatfilter.
+- _Components magLPF(Components&amp; currentMag, Components&amp; prevMagLP)__:_ filtert ruis uit de magnetische kracht data, laagdoorlaatfilter.
+- _Components accHPF(std::list\&lt;Components\&gt;&amp; accs)__:_ high pass filter voor acceleratie data.
 
 ### Motion
 
 De Motion library bevat functies om de positie en de oriëntatie van een object te bepalen.
 
--
-### _Components calcPosition(const Components currentAcc, const Components orientation, const Components prevPosition, double dt)__:_ berekent de x, y, z coördinaten van de positie van een object gegeven zijn huidige acceleratie, oriëntatie, vorige positie en de tijd tussen samples.
--
-### _Components calcOrientation(const Components acc, const Components vel, const Components mag, float dt)__:_ berekent de x, y, z coördinaten van de oriëntatie van een object gegeven zijn huidige acceleratie, hoeksnelheid, magnetische kracht en de tijd tussen samples.
+- _Components calcPosition(const Components currentAcc, const Components orientation, const Components prevPosition, double dt)__:_ berekent de x, y, z coördinaten van de positie van een object gegeven zijn huidige acceleratie, oriëntatie, vorige positie en de tijd tussen samples.
+- _Components calcOrientation(const Components acc, const Components vel, const Components mag, float dt)__:_ berekent de x, y, z coördinaten van de oriëntatie van een object gegeven zijn huidige acceleratie, hoeksnelheid, magnetische kracht en de tijd tussen samples.
 
 ### Components
 
@@ -174,45 +157,27 @@ De WPF applicatie is opgedeeld in verschillende modules, geïmplementeerd als cl
 
 Intialiseert de layout van de Windows Forms applicatie. Reageert op events vanuit de layout en implementeert timers.
 
--
-### _MainWindow()__:_ Initialiseert de Wi-Fi module en de layout. Voegt 3D F1 model toe aan de layout. Zet de viewport camera op de juiste positie.
--
-### _Window\_Loaded(object sender, RoutedEventArgs e):_ callback voor een layout render event. Initialiseert de timers voor het ontvangen en versturen van data via Wi-Fi. Initialiseert en start een timer voor het updaten van de UI.
--
-### _timerUpdate\_tick (object sender, RoutedEventArgs e):_ callback voor de timer die de layout updatet: wordt elke 30 ms opgeroepen. Draait het F1 model naar de nieuwe oriëntatie, als er nieuwe oriëntatie data is.
--
-### _pollData (object sender, RoutedEventArgs e):_ callback voor een timer: wordt elke 30 ms opgeroepen. Ontvangt nieuwe data via Wi-Fi.
--
-### _sendData (object sender, RoutedEventArgs e):_ callback voor een timer: wordt elke 1000 ms opgeroepen. Verstuurt een bericht via Wi-Fi.
--
-### _btn\_connect\_Click (object sender, RoutedEventArgs e):_ callback voor een button. Start de Wi-Fi communicatie met de ESP8266 en start timers voor het ontvangen en versturen van data.
--
-### _btn\_disconnect\_Click (object sender, RoutedEventArgs e):_ callback voor een button. Stopt de Wi-Fi communicatie met de ESP8266 en stopt timers voor het ontvangen en versturen van data.
--
-### _btn\_reset\_Click (object sender, RoutedEventArgs e):_ callback voor een button. Zet het F1 model in een bepaalde oriëntatie, om de oriëntatie te synchroniseren met de oriëntatie van de MPU9250 sensor.
--
-### _rotate\_model (Components orientation):_ Zet het F1 model in een bepaalde oriëntatie volgens het argument &#39;orientation&#39;.
--
-### _translate\_model (Components position):_ Zet het F1 model in een bepaalde positie volgens het argument &#39;position.
--
-### _Model3D import3D (string model):_ importeert het 3D-model in het bestand met de path &#39;model&#39;. Geeft een 3D model.
+- _MainWindow()__:_ Initialiseert de Wi-Fi module en de layout. Voegt 3D F1 model toe aan de layout. Zet de viewport camera op de juiste positie.
+- _Window\_Loaded(object sender, RoutedEventArgs e):_ callback voor een layout render event. Initialiseert de timers voor het ontvangen en versturen van data via Wi-Fi. Initialiseert en start een timer voor het updaten van de UI.
+- _timerUpdate\_tick (object sender, RoutedEventArgs e):_ callback voor de timer die de layout updatet: wordt elke 30 ms opgeroepen. Draait het F1 model naar de nieuwe oriëntatie, als er nieuwe oriëntatie data is.
+- _pollData (object sender, RoutedEventArgs e):_ callback voor een timer: wordt elke 30 ms opgeroepen. Ontvangt nieuwe data via Wi-Fi.
+- _sendData (object sender, RoutedEventArgs e):_ callback voor een timer: wordt elke 1000 ms opgeroepen. Verstuurt een bericht via Wi-Fi.
+- _btn\_connect\_Click (object sender, RoutedEventArgs e):_ callback voor een button. Start de Wi-Fi communicatie met de ESP8266 en start timers voor het ontvangen en versturen van data.
+- _btn\_disconnect\_Click (object sender, RoutedEventArgs e):_ callback voor een button. Stopt de Wi-Fi communicatie met de ESP8266 en stopt timers voor het ontvangen en versturen van data.
+- _btn\_reset\_Click (object sender, RoutedEventArgs e):_ callback voor een button. Zet het F1 model in een bepaalde oriëntatie, om de oriëntatie te synchroniseren met de oriëntatie van de MPU9250 sensor.
+- _rotate\_model (Components orientation):_ Zet het F1 model in een bepaalde oriëntatie volgens het argument &#39;orientation&#39;.
+- _translate\_model (Components position):_ Zet het F1 model in een bepaalde positie volgens het argument &#39;position.
+- _Model3D import3D (string model):_ importeert het 3D-model in het bestand met de path &#39;model&#39;. Geeft een 3D model.
 
 ### WifiModule
 
--
-### _WifiModule():_ initialiseert de UDP client.
--
-### _connect():_ verbindt met de UDP server van de ESP8266.
--
-### _disconnect():_ verbreekt de verbinding met de UDP server van de ESP8266.
--
-### _bool hasData():_ geeft aan of er nieuwe pose data is ontvangen.
--
-### _getData(ref LinkedList\&lt;Pose\&gt; poses):_ geeft de nieuwe pose data en stopt deze in de lijst &#39;poses&#39;.
--
-### _int sendData():_ verstuurt een bericht naar de ESP8266 die aangeeft dat de client de data van de ESP8266 ontvangt. Geeft het aantal verstuurde bytes.
--
-### _bool updateData():_ controleert of er nieuwe data is ontvangen en voegt de nieuwe data toe aan buffers. Geeft &#39;true&#39; als er nieuwe data is ontvangen, anders &#39;false&#39;.
+- _WifiModule():_ initialiseert de UDP client.
+- _connect():_ verbindt met de UDP server van de ESP8266.
+- _disconnect():_ verbreekt de verbinding met de UDP server van de ESP8266.
+- _bool hasData():_ geeft aan of er nieuwe pose data is ontvangen.
+- _getData(ref LinkedList\&lt;Pose\&gt; poses):_ geeft de nieuwe pose data en stopt deze in de lijst &#39;poses&#39;.
+- _int sendData():_ verstuurt een bericht naar de ESP8266 die aangeeft dat de client de data van de ESP8266 ontvangt. Geeft het aantal verstuurde bytes.
+- _bool updateData():_ controleert of er nieuwe data is ontvangen en voegt de nieuwe data toe aan buffers. Geeft &#39;true&#39; als er nieuwe data is ontvangen, anders &#39;false&#39;.
 
 ### Pose
 
