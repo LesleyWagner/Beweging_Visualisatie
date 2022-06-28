@@ -20,15 +20,15 @@ Het programma laat de bewegingen van een Arduino zien op het computerscherm. Op 
 
 Hieronder is een flow diagram weergegeven voor het systeem. Een Arduino berekent zijn positie in de ruimte door middel van informatie van de bewegingssensor. De sensor verkrijgt de acceleratie in drie richtingen, de hoeksnelheid in drie richtingen en de magnetische kracht in drie richtingen. De Arduino berekent de huidige positie van zichzelf met behulp van deze data elke periode van ? milliseconden. Hij stuurt de laatst bekende posities naar de Windows computer met behulp van de Wi-Fi transceiver. De Windows computer geeft de positie en oriëntatie van de Arduino weer met een F1 3D model. Een andere knop reset het scherm. Er is een optie om de sensitiviteit van de bewegingen van de Arduino aan te passen. Deze aanpassingen wordt verstuurd naar de Arduino met Wi-Fi via de omgekeerde weg t.o.v. de positiedata.
 
-![](RackMultipart20220628-1-k663i1_html_26953862dacbaca7.png)
+<img src="images/Beweging_Visualisatie-Flow diagram.png"/>
 
 _Figuur 1: Flow diagram_
 
-![](RackMultipart20220628-1-k663i1_html_df6c5d9dc5f91d86.png)
+<img src="images/Beweging_Visualisatie-Arduino app.png"/>
 
 _Figuur 2: Class diagram Arduino app_
 
-![](RackMultipart20220628-1-k663i1_html_1c25550b773927bc.png)
+<img src="images/Beweging_Visualisatie-Windows app.png"/>
 
 _Figuur 3: Class diagram Windows app_
 
@@ -48,7 +48,7 @@ De I2C-communicatie wordt geïmplementeerd met de Wire library: [https://www.ard
 
 De communicatie van de Arduino met de laptop loopt via een WiFi-signaal. Er wordt gebruik gemaakt van de internet protocol suite. De internetlaag is IPv4 en de transportlaag UDP. Voor de ontwikkeling van de software is de transportlaag UDP van het grootste belang, want de applicaties communiceren direct via UDP. UDP en de netwerklagen op lager niveau zijn geïmplementeerd met libraries en het besturingssysteem van ExpressIf en Microsoft. UDP werkt zonder individuele verbinding van apparaten en heeft geen foutcontrole. Er wordt ook geen gebruik gemaakt van handshaking. Daarom is het een lichtgewicht protocol dat geschikt is voor real-time applicaties met snelle dataoverdracht, waarbij een verlies aan informatie niet kritisch is. UDP gebruik van netwerk sockets, bestaande uit een IP adres en een poort nummer, die aangeven met welk apparaat in het netwerk moet worden gecommuniceerd. Een UDP bericht (datagram) ziet er als volgt uit:
 
-![](RackMultipart20220628-1-k663i1_html_1796d59a3bcef3eb.png)
+<img src="images/UDP_Datagram.png"/>
 
 _Figuur 4: UDP datagram_
 
@@ -147,7 +147,7 @@ Struct om een grootheid met x, y, z componenten op te slaan. Heeft geen functies
 
 Er is gekozen om de bewegingen van de Arduino weer te geven in een Windows Presentation Foundation (WPF) applicatie. Met een WPF applicatie is het mogelijk om een 3D omgeving weer te geven. Het 3D model is gemaakt in een andere applicatie en wordt door een WPF library geconverteerd naar een formaat dat de applicatie kan afbeelden.
 
-![](RackMultipart20220628-1-k663i1_html_3177dadce087dcf0.png)
+<img src="images/Beweging_Visualisatie_Screenshot.png"/>
 
 _Figuur 5: Screenshot van de WPF applicatie_
 
