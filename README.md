@@ -20,15 +20,15 @@ Het programma laat de bewegingen van een Arduino zien op het computerscherm. Op 
 
 Hieronder is een flow diagram weergegeven voor het systeem. Een Arduino berekent zijn positie in de ruimte door middel van informatie van de bewegingssensor. De sensor verkrijgt de acceleratie in drie richtingen, de hoeksnelheid in drie richtingen en de magnetische kracht in drie richtingen. De Arduino berekent de huidige positie van zichzelf met behulp van deze data elke periode van ? milliseconden. Hij stuurt de laatst bekende posities naar de Windows computer met behulp van de Wi-Fi transceiver. De Windows computer geeft de positie en oriëntatie van de Arduino weer met een F1 3D model. Een andere knop reset het scherm. Er is een optie om de sensitiviteit van de bewegingen van de Arduino aan te passen. Deze aanpassingen wordt verstuurd naar de Arduino met Wi-Fi via de omgekeerde weg t.o.v. de positiedata.
 
-![](images/Beweging_Visualisatie-Flow diagram.png)
+<img src="images/Beweging_Visualisatie-Flow diagram.png"/>
 
 _Figuur 1: Flow diagram_
 
-![](images/Beweging_Visualisatie-Arduino app.png)
+<img src="images/Beweging_Visualisatie-Arduino app.png"/>
 
 _Figuur 2: Class diagram Arduino app_
 
-![](images/Beweging_Visualisatie-Windows app.png)
+<img src="images/Beweging_Visualisatie-Windows app.png"/>
 
 _Figuur 3: Class diagram Windows app_
 
@@ -147,7 +147,7 @@ Struct om een grootheid met x, y, z componenten op te slaan. Heeft geen functies
 
 Er is gekozen om de bewegingen van de Arduino weer te geven in een Windows Presentation Foundation (WPF) applicatie. Met een WPF applicatie is het mogelijk om een 3D omgeving weer te geven. Het 3D model is gemaakt in een andere applicatie en wordt door een WPF library geconverteerd naar een formaat dat de applicatie kan afbeelden.
 
-![](Beweging_Visualisatie_Screenshot.png)
+<img src="Beweging_Visualisatie_Screenshot.png"/>
 
 _Figuur 5: Screenshot van de WPF applicatie_
 
