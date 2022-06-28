@@ -48,7 +48,7 @@ De I2C-communicatie wordt geïmplementeerd met de Wire library: [https://www.ard
 
 De communicatie van de Arduino met de laptop loopt via een WiFi-signaal. Er wordt gebruik gemaakt van de internet protocol suite. De internetlaag is IPv4 en de transportlaag UDP. Voor de ontwikkeling van de software is de transportlaag UDP van het grootste belang, want de applicaties communiceren direct via UDP. UDP en de netwerklagen op lager niveau zijn geïmplementeerd met libraries en het besturingssysteem van ExpressIf en Microsoft. UDP werkt zonder individuele verbinding van apparaten en heeft geen foutcontrole. Er wordt ook geen gebruik gemaakt van handshaking. Daarom is het een lichtgewicht protocol dat geschikt is voor real-time applicaties met snelle dataoverdracht, waarbij een verlies aan informatie niet kritisch is. UDP gebruik van netwerk sockets, bestaande uit een IP adres en een poort nummer, die aangeven met welk apparaat in het netwerk moet worden gecommuniceerd. Een UDP bericht (datagram) ziet er als volgt uit:
 
-![](UDP_Datagram.png)
+<img> src="images/UDP_Datagram.png"</img>
 
 _Figuur 4: UDP datagram_
 
