@@ -24,7 +24,7 @@ Hieronder is een flow diagram weergegeven voor het systeem. Een Arduino berekent
 
 _Figuur 1: Flow diagram_
 
-![](RackMultipart20220628-1-k663i1_html_df6c5d9dc5f91d86.png)
+![](images/Beweging_Visualisatie-Arduino app.png)
 
 _Figuur 2: Class diagram Arduino app_
 
