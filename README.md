@@ -147,7 +147,7 @@ Struct om een grootheid met x, y, z componenten op te slaan. Heeft geen functies
 
 Er is gekozen om de bewegingen van de Arduino weer te geven in een Windows Presentation Foundation (WPF) applicatie. Met een WPF applicatie is het mogelijk om een 3D omgeving weer te geven. Het 3D model is gemaakt in een andere applicatie en wordt door een WPF library geconverteerd naar een formaat dat de applicatie kan afbeelden.
 
-<img src="Beweging_Visualisatie_Screenshot.png"/>
+<img src="images/Beweging_Visualisatie_Screenshot.png"/>
 
 _Figuur 5: Screenshot van de WPF applicatie_
 
