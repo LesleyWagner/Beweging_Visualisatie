@@ -36,8 +36,8 @@
 #include "WiFiModule.h"
 
 #define AHRS true         // Set to false for basic data read
-#define SerialDebug true  // Set to true to get Serial output for debugging
-#define Wifi false
+#define SerialDebug false  // Set to true to get Serial output for debugging
+#define Wifi true
 #define BUFFER_SIZE 100 // buffer size for the position and orientation data samples
 #define I2Cclock 400000
 #define I2Cport Wire
@@ -161,7 +161,7 @@ void setup() {
         // Get magnetometer calibration from AK8963 ROM
         myIMU.initAK8963();
         // calibrate AK8963 by moving the MPU9250 in a figure 8
-        // myIMU.magCalMPU9250();
+        myIMU.magCalMPU9250();
         // Initialize device for active mode read of magnetometer
         // Serial.println("AK8963 initialized for active data mode....");
 
@@ -243,10 +243,10 @@ void loop() {
     filteredAccs.push_back(currentAcc);
 
     if (SerialDebug) {
-        Serial.print("ax = ");  Serial.print((int)1000 * myIMU.ax);
+        /*Serial.print("ax = ");  Serial.print((int)1000 * myIMU.ax);
         Serial.print(" ay = "); Serial.print((int)1000 * myIMU.ay);
         Serial.print(" az = "); Serial.print((int)1000 * myIMU.az);
-        Serial.println(" mg");
+        Serial.println(" mg");*/
 
         /*Serial.print("gx = ");  Serial.print(myIMU.gx, 2);
         Serial.print(" gy = "); Serial.print(myIMU.gy, 2);

@@ -2,6 +2,7 @@ C:\Users\lesle\AppData\Local\Temp\VMBuilds\Beweging_Visualisatie\esp8266_d1_mini
  C:\Users\lesle\AppData\Local\Temp\VMBuilds\Beweging_Visualisatie\esp8266_d1_mini_pro\Debug\Motion.cpp \
  C:\Users\lesle\AppData\Local\Temp\VMBuilds\Beweging_Visualisatie\esp8266_d1_mini_pro\Debug\Motion.h \
  C:\Users\lesle\AppData\Local\Temp\VMBuilds\Beweging_Visualisatie\esp8266_d1_mini_pro\Debug\Components.h \
+ C:\Users\lesle\OneDrive\Documenten\Arduino\libraries\SparkFun_MPU-9250_Breakout_Arduino_Library\src/quaternionFilters.h \
  C:\Users\lesle\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\3.0.2\cores\esp8266/Arduino.h \
  C:\Users\lesle\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\3.0.2\cores\esp8266/stdlib_noniso.h \
  C:\Users\lesle\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\3.0.2\cores\esp8266/binary.h \

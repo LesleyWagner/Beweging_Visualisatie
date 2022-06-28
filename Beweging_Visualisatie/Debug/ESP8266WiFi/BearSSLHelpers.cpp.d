@@ -61,4 +61,4 @@ C:\Users\lesle\AppData\Local\Temp\VMBuilds\Beweging_Visualisatie\esp8266_d1_mini
  C:\Users\lesle\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\3.0.2\cores\esp8266/WString.h \
  C:\Users\lesle\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\3.0.2\cores\esp8266/Stream.h \
  C:\Users\lesle\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\3.0.2\cores\esp8266/md5.h \
- C:\Users\lesle\AppData\Local\Temp\VMBuilds\Beweging_Visualisatie\esp8266_d1_mini_pro\Debug/core/Updater_Signing.h
+ C:\Users\lesle\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\3.0.2\cores\esp8266/Updater_Signing.h
